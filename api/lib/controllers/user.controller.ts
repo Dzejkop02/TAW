@@ -23,6 +23,7 @@ class UserController implements Controller {
        this.router.delete(`${this.path}/logout/:userId`, auth, this.removeHashSession);
 
        this.router.patch(`${this.path}/change-password`, auth, this.changePassword);
+       this.router.post(`${this.path}/reset/:userId`, this.resetPassword);
    }
 
    private authenticate = async (request: Request, response: Response, next: NextFunction) => {
@@ -82,6 +83,18 @@ class UserController implements Controller {
                 oldPassword,
                 await this.passwordService.hashPassword(newPassword)
             );
+            response.status(200).send(result);
+        } catch (error) {
+            console.error(`Validation Error: ${error.message}`);
+            response.status(401).json({error: 'Unauthorized'});
+        }
+    };
+
+    private resetPassword = async (request: Request, response: Response, next: NextFunction) => {
+        const {userId} = request.params;
+
+        try {
+            const result = await this.passwordService.deletePassword(userId);
             response.status(200).send(result);
         } catch (error) {
             console.error(`Validation Error: ${error.message}`);

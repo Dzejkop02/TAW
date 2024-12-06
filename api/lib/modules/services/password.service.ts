@@ -1,4 +1,5 @@
 import PasswordModel  from '../schemas/password.schema';
+import UserModel from '../schemas/user.schema';
 import bcrypt from 'bcrypt';
 
 class PasswordService {
@@ -38,6 +39,25 @@ class PasswordService {
                 return await PasswordModel.findOneAndUpdate({ userId: userId }, { $set: { password: newPassword } }, { new: true });
             }
             return false;
+        } catch (error) {
+            console.error('Wystąpił błąd podczas tworzenia danych:', error);
+            throw new Error('Wystąpił błąd podczas tworzenia danych');
+        }
+    }
+
+    public async deletePassword(userId: string) {
+        try {
+            const user = await UserModel.findOne({_id: userId});
+            if (!user) {
+                throw new Error('User not found');
+            }
+
+            const randomPass = Math.random().toString(36).slice(-8);
+            const hashedPassword = await this.hashPassword(randomPass);
+
+            const result = await PasswordModel.findOneAndUpdate({ userId: userId }, { $set: { password: hashedPassword } }, { new: true });
+
+            return {randomPass};
         } catch (error) {
             console.error('Wystąpił błąd podczas tworzenia danych:', error);
             throw new Error('Wystąpił błąd podczas tworzenia danych');
