@@ -1,19 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c048542-de11-4398-94d5-b7ad77110f57" name="Changes" comment="Added logger middleware.">
+    <list default="true" id="9c048542-de11-4398-94d5-b7ad77110f57" name="Changes" comment="Pasted code from lab.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/lib/config.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/lib/config.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/lib/controllers/post.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/lib/controllers/post.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/lib/index.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/lib/index.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/lib/middlewares/checkPostCount.middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/lib/middlewares/checkPostCount.middleware.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/lib/middlewares/logger.middleware.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/lib/middlewares/logger.middleware.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/lib/modules/models/data.model.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/lib/modules/models/data.model.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/lib/modules/schemas/data.schema.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/lib/modules/schemas/data.schema.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/lib/modules/services/data.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/lib/modules/services/data.service.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/nodemon.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/nodemon.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/api/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/lib/controllers/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/lib/controllers/user.controller.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/lib/modules/services/password.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/lib/modules/services/password.service.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

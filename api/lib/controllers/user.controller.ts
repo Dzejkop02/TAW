@@ -21,11 +21,13 @@ class UserController implements Controller {
        this.router.post(`${this.path}/create`, this.createNewOrUpdate);
        this.router.post(`${this.path}/auth`, this.authenticate);
        this.router.delete(`${this.path}/logout/:userId`, auth, this.removeHashSession);
+
+       this.router.patch(`${this.path}/change-password`, auth, this.changePassword);
    }
 
    private authenticate = async (request: Request, response: Response, next: NextFunction) => {
         const {login, password} = request.body;
-    
+
         try {
             const user = await this.userService.getByEmailOrName(login);
             if (!user) {
@@ -39,7 +41,7 @@ class UserController implements Controller {
             response.status(401).json({error: 'Unauthorized'});
         }
     };
- 
+
     private createNewOrUpdate = async (request: Request, response: Response, next: NextFunction) => {
         const userData = request.body;
         try {
@@ -56,14 +58,30 @@ class UserController implements Controller {
             console.error(`Validation Error: ${error.message}`);
             response.status(400).json({error: 'Bad request', value: error.message});
         }
-    
+
     };
- 
+
     private removeHashSession = async (request: Request, response: Response, next: NextFunction) => {
         const {userId} = request.params
-    
+
         try {
             const result = await this.tokenService.remove(userId);
+            response.status(200).send(result);
+        } catch (error) {
+            console.error(`Validation Error: ${error.message}`);
+            response.status(401).json({error: 'Unauthorized'});
+        }
+    };
+
+    private changePassword = async (request: Request, response: Response, next: NextFunction) => {
+        const {userId, oldPassword, newPassword} = request.body;
+
+        try {
+            const result = await this.passwordService.changePassword(
+                userId,
+                oldPassword,
+                await this.passwordService.hashPassword(newPassword)
+            );
             response.status(200).send(result);
         } catch (error) {
             console.error(`Validation Error: ${error.message}`);

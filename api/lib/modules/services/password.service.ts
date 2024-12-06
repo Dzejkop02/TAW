@@ -24,6 +24,26 @@ class PasswordService {
 
    }
 
+    public async changePassword(userId: string, oldPassword: string, newPassword: string) {
+        try {
+            const result = await PasswordModel.findOne({ userId: userId });
+            console.log('find result', result);
+            if (!result) {
+                return false;
+            }
+
+            const match = await this.passwordsMatch(oldPassword, result.password);
+            console.log('match', match);
+            if (match) {
+                return await PasswordModel.findOneAndUpdate({ userId: userId }, { $set: { password: newPassword } }, { new: true });
+            }
+            return false;
+        } catch (error) {
+            console.error('Wystąpił błąd podczas tworzenia danych:', error);
+            throw new Error('Wystąpił błąd podczas tworzenia danych');
+        }
+    }
+
    async hashPassword(password: string): Promise<string> {
        const saltRounds = 10;
        const hashedPassword = await bcrypt.hash(password, saltRounds);
@@ -31,6 +51,9 @@ class PasswordService {
        return hashedPassword;
    }
 
+    async passwordsMatch(password: string, hash: string): Promise<boolean> {
+        return await bcrypt.compare(password, hash);
+    }
 }
 
 export default PasswordService;
