@@ -1,11 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c048542-de11-4398-94d5-b7ad77110f57" name="Changes" comment="Added reset password.">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/lib/controllers/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/lib/controllers/user.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/lib/modules/services/password.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/lib/modules/services/password.service.ts" afterDir="false" />
-    </list>
+    <list default="true" id="fe0e602a-6278-4bc1-8013-c93175d5b4df" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -17,7 +13,7 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2pD7hlFD03XpFkErl8F9STyimMe" />
+  <component name="ProjectId" id="2qcQiLVL2bw5lYB83168u7uTbty" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -28,89 +24,36 @@
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;last_opened_file_path&quot;: &quot;E:/STUDIA/5_Semestr/taw/mean-app/api/lib/middlewares&quot;,
     &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;E:\\STUDIA\\5_Semestr\\taw\\mean-app\\api\\node_modules\\typescript\\lib&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="E:\STUDIA\5_Semestr\taw\mean-app\api\lib\middlewares" />
-    </key>
-  </component>
-  <component name="RunManager" selected="npm.dev">
-    <configuration name="dev" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/api/package.json" />
+  <component name="RunManager" selected="npm.Angular CLI Server">
+    <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
+      <method v="2" />
+    </configuration>
+    <configuration name="Angular CLI Server" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
       <command value="run" />
       <scripts>
-        <script value="dev" />
+        <script value="start" />
       </scripts>
       <node-interpreter value="project" />
       <envs />
       <method v="2" />
     </configuration>
-    <configuration name="watch" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
-      <package-json value="$PROJECT_DIR$/api/package.json" />
-      <command value="run" />
-      <scripts>
-        <script value="watch" />
-      </scripts>
-      <node-interpreter value="project" />
-      <envs />
-      <method v="2" />
-    </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="npm.watch" />
-        <item itemvalue="npm.dev" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="9c048542-de11-4398-94d5-b7ad77110f57" name="Changes" comment="" />
-      <created>1732288914998</created>
+      <changelist id="fe0e602a-6278-4bc1-8013-c93175d5b4df" name="Changes" comment="" />
+      <created>1734959511215</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1732288914998</updated>
-      <workItem from="1732288916692" duration="2001000" />
-      <workItem from="1732912991516" duration="149000" />
-      <workItem from="1732913162899" duration="65000" />
-      <workItem from="1732913243346" duration="1663000" />
-      <workItem from="1733432283598" duration="548000" />
-      <workItem from="1733506991206" duration="2314000" />
+      <updated>1734959511215</updated>
+      <workItem from="1734959514263" duration="112000" />
+      <workItem from="1734959645018" duration="36000" />
     </task>
-    <task id="LOCAL-00001" summary="Lab 06">
-      <created>1732290962546</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1732290962546</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Lab 07 complete">
-      <created>1732914900872</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1732914900872</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Added logger middleware.">
-      <created>1733432807569</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1733432807569</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Added reset password.">
-      <created>1733526126376</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1733526126376</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -126,12 +69,5 @@
         </entry>
       </map>
     </option>
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Lab 06" />
-    <MESSAGE value="Lab 07 complete" />
-    <MESSAGE value="Added logger middleware." />
-    <MESSAGE value="Added reset password." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added reset password." />
   </component>
 </project>
