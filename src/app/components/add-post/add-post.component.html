@@ -1,0 +1,25 @@
+<div class="m-lg-5">
+<form (submit)="addPost($event)">
+  <div class="mb-3">
+    <label for="title" class="form-label">Title</label>
+    <input
+      type="text"
+      class="form-control"
+      id="title"
+      required
+      [(ngModel)]="inputTitle"
+      name="inputTitle">
+  </div>
+  <div class="mb-3">
+    <label for="text" class="form-label">Content</label>
+    <input
+      type="text"
+      class="form-control"
+      id="text"
+      required
+      [(ngModel)]="inputText"
+      name="inputText">
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+</div>

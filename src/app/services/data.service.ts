@@ -75,4 +75,13 @@ export class DataService {
  public getAll() {
    return posts;
  }
+
+  public addPost(title: string, text: string) {
+    posts.push({
+      title,
+      text,
+      image: 'https://www.pandasecurity.com/en/mediacenter/src/uploads/2013/11/pandasecurity-facebook-photo-privacy.jpg',
+      id: Math.random().toString(36).substring(7),
+    });
+  }
 }
