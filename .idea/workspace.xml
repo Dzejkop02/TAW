@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe0e602a-6278-4bc1-8013-c93175d5b4df" name="Changes" comment="Comments system fixed.">
+    <list default="true" id="fe0e602a-6278-4bc1-8013-c93175d5b4df" name="Changes" comment="New post module added.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/app.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/app.component.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app/services/data.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/services/data.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/blog/blog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/blog/blog.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/blog/blog.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/blog/blog.component.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +58,7 @@
       <updated>1734959511215</updated>
       <workItem from="1734959514263" duration="112000" />
       <workItem from="1734959645018" duration="36000" />
-      <workItem from="1734959690551" duration="8480000" />
+      <workItem from="1734959690551" duration="9936000" />
     </task>
     <task id="LOCAL-00001" summary="Code pasted from lab.">
       <created>1734959818571</created>
@@ -82,7 +81,14 @@
       <option name="project" value="LOCAL" />
       <updated>1734968313713</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="New post module added.">
+      <created>1734969371082</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1734969371082</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -103,6 +109,7 @@
     <MESSAGE value="Code pasted from lab." />
     <MESSAGE value="Comments system added." />
     <MESSAGE value="Comments system fixed." />
-    <option name="LAST_COMMIT_MESSAGE" value="Comments system fixed." />
+    <MESSAGE value="New post module added." />
+    <option name="LAST_COMMIT_MESSAGE" value="New post module added." />
   </component>
 </project>
