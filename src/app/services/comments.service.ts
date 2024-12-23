@@ -9,15 +9,9 @@ export class CommentsService {
   constructor() { }
 
   public addComment(id: string, comment: string) {
-    if (!this.comments.has(id)) {
-      this.comments.set(id, []);
-    }
-
-    const comments = this.comments.get(id);
-    if (comments) {
-      comments.push(comment);
-      this.comments.set(id, comments);
-    }
+    const comments = this.comments.get(id) || [];
+    comments.push(comment);
+    this.comments.set(id, comments);
   }
 
   public getComments(id: string) {
