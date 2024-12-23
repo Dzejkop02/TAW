@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fe0e602a-6278-4bc1-8013-c93175d5b4df" name="Changes" comment="" />
+    <list default="true" id="fe0e602a-6278-4bc1-8013-c93175d5b4df" name="Changes" comment="Code pasted from lab.">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/blog-item-image/blog-item-image.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/blog-item-image/blog-item-image.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/blog-item/blog-item.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/blog-item/blog-item.component.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/blog-item/blog-item.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/blog-item/blog-item.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/components/blog/blog.component.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/components/blog/blog.component.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -19,15 +25,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "ts.external.directory.path": "E:\\STUDIA\\5_Semestr\\taw\\blog\\node_modules\\typescript\\lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="npm.Angular CLI Server">
     <configuration name="Angular Application" type="JavascriptDebugType" uri="http://localhost:4200">
       <method v="2" />
@@ -53,7 +60,16 @@
       <updated>1734959511215</updated>
       <workItem from="1734959514263" duration="112000" />
       <workItem from="1734959645018" duration="36000" />
+      <workItem from="1734959690551" duration="7128000" />
     </task>
+    <task id="LOCAL-00001" summary="Code pasted from lab.">
+      <created>1734959818571</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1734959818571</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -69,5 +85,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Code pasted from lab." />
+    <option name="LAST_COMMIT_MESSAGE" value="Code pasted from lab." />
   </component>
 </project>
