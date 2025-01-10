@@ -5,12 +5,14 @@ import bodyParser from 'body-parser';
 // import morgan from 'morgan';
 import mongoose from 'mongoose';
 import {logger} from './middlewares/logger.middleware';
+import cors from 'cors';
 
 class App {
     public app: express.Application;
 
     constructor(controllers: Controller[]) {
         this.app = express();
+        this.app.use(cors())
         this.initializeMiddlewares();
         this.initializeControllers(controllers);
         this.connectToDatabase();

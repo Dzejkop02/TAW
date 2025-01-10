@@ -1,0 +1,24 @@
+<div class="card" style="width: 18rem;">
+  <ul class="list-group list-group-flush">
+    <form class="list-group-item" (submit)="addComment($event)">
+      <div class="mb-3">
+        <label for="newComment" class="form-label">Add comment</label>
+        <input
+          required
+          type="text"
+          class="form-control"
+          id="newComment"
+          placeholder="Enter your comment"
+          [(ngModel)]="newComment"
+          name="newComment">
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+    <li class="list-group-item" *ngFor="let comment of comments">
+      {{ comment }}
+    </li>
+    <li class="list-group-item" *ngIf="comments.length === 0">
+      No comments yet.
+    </li>
+  </ul>
+</div>

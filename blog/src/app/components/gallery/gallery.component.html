@@ -1,0 +1,15 @@
+<div class="d-flex justify-content-between mt-5 mb-3">
+  <button class="btn btn-primary" (click)="zoomIn()" [disabled]="columns <= minColumns">
+    <i class="bi bi-zoom-in"></i> Powiększ
+  </button>
+  <span>Liczba kolumn: {{ columns }}</span>
+  <button class="btn btn-primary" (click)="zoomOut()" [disabled]="columns >= maxColumns">
+    <i class="bi bi-zoom-out"></i> Pomniejsz
+  </button>
+</div>
+
+<div class="row row-cols-{{columns}} g-3">
+  <div class="col" *ngFor="let image of images">
+    <img [src]="image" alt="Obraz" class="img-fluid rounded">
+  </div>
+</div>
