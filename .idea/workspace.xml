@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c048542-de11-4398-94d5-b7ad77110f57" name="Changes" comment="Added delete password." />
+    <list default="true" id="9c048542-de11-4398-94d5-b7ad77110f57" name="Changes" comment="lab 10" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -77,6 +77,7 @@
       <workItem from="1732913243346" duration="1663000" />
       <workItem from="1733432283598" duration="548000" />
       <workItem from="1733506991206" duration="2314000" />
+      <workItem from="1736547347664" duration="85000" />
     </task>
     <task id="LOCAL-00001" summary="Lab 06">
       <created>1732290962546</created>
@@ -113,7 +114,14 @@
       <option name="project" value="LOCAL" />
       <updated>1733527100053</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="lab 10">
+      <created>1736547424236</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1736547424236</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +144,7 @@
     <MESSAGE value="Added logger middleware." />
     <MESSAGE value="Added reset password." />
     <MESSAGE value="Added delete password." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added delete password." />
+    <MESSAGE value="lab 10" />
+    <option name="LAST_COMMIT_MESSAGE" value="lab 10" />
   </component>
 </project>

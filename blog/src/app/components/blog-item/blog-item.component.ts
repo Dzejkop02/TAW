@@ -12,7 +12,7 @@ import {CommentsSectionComponent} from '../comments-section/comments-section.com
 })
 export class BlogItemComponent {
   // @Input() postId?: string;
-  @Input() id?: string;
+  @Input() id?: number;
   @Input() image?: string;
   @Input() text?: string;
 
