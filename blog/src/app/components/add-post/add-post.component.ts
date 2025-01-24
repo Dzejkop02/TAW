@@ -13,16 +13,30 @@ import {DataService} from '../../services/data.service';
 export class AddPostComponent {
   inputTitle: string = '';
   inputText: string = '';
+  inputImage: string = '';
 
   constructor(private dataService: DataService) {
   }
 
   addPost(event: Event) {
     event.preventDefault();
-    if (this.inputTitle.trim() && this.inputText.trim()) {
-      this.dataService.addPost(this.inputTitle.trim(), this.inputText.trim());
+    if (this.inputTitle.trim() && this.inputText.trim() && this.inputImage.trim()) {
+      this.dataService.addPost(
+        this.inputTitle.trim(),
+        this.inputText.trim(),
+        this.inputImage.trim()
+      ).subscribe(
+        response => {
+          console.log('Post dodany pomyślnie', response);
+        },
+        error => {
+          console.error('Błąd podczas dodawania posta', error);
+        }
+      );
+
       this.inputTitle = '';
       this.inputText = '';
+      this.inputImage = '';
     }
   }
 }

@@ -1,4 +1,5 @@
+<button (click)="refreshPosts()" class="btn btn-primary">Odśwież posty</button>
 <app-search-bar (name)="getName($event)">
 </app-search-bar>
-<blog [filterText]="filterText">
+<blog #blogComponent [filterText]="filterText">
 </blog>

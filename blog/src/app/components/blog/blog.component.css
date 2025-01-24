@@ -1,0 +1,9 @@
+.blog-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.blog-item {
+  flex: 0 1 auto;
+}

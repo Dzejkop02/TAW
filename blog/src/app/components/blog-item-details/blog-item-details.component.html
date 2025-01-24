@@ -1,4 +1,11 @@
-<img [src]="image" >
-<p>
- {{ text }}
-</p>
+<div *ngIf="title && text && image; else loading">
+  <h2>{{ title }}</h2>
+  <img [src]="image" alt="Obraz posta" class="post-image" />
+  <p>{{ text }}</p>
+  <button (click)="goBack()" class="btn btn-primary go-back">Wstecz</button>
+  <button (click)="deletePost()" class="btn btn-danger">Usuń ten post</button>
+</div>
+
+<ng-template #loading>
+  <p>Ładowanie...</p>
+</ng-template>

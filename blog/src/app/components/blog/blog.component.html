@@ -1,5 +1,19 @@
-<div *ngFor="let item of items$ | filter:filterText">
-    <blog-item [id]="item.id" [image]="item.image" [text]="item.text">
-    </blog-item>
-</div>
-<!--<gallery [images]="images"></gallery>-->
+<ng-container *ngIf="(items$ | filter:filterText)?.length; else noItems">
+  <div class="blog-container">
+    <div class="blog-item" *ngFor="let item of items$ | filter:filterText">
+      <blog-item
+        [id]="item._id"
+        [image]="item.image"
+        [text]="item.text"
+        [title]="item.title">
+      </blog-item>
+    </div>
+  </div>
+  <gallery [images]="images"></gallery>
+</ng-container>
+
+<ng-template #noItems>
+  <p>Brak wyników.</p>
+</ng-template>
+
+

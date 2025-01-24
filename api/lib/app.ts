@@ -2,7 +2,7 @@ import express from 'express';
 import { config } from './config';
 import Controller from "./interfaces/controller.interface";
 import bodyParser from 'body-parser';
-// import morgan from 'morgan';
+import morgan from 'morgan';
 import mongoose from 'mongoose';
 import {logger} from './middlewares/logger.middleware';
 import cors from 'cors';
@@ -20,8 +20,8 @@ class App {
 
     private initializeMiddlewares(): void {
         this.app.use(bodyParser.json());
-        // this.app.use(morgan('dev'));
-        this.app.use(logger);
+        this.app.use(morgan('dev'));
+        // this.app.use(logger);
     }
 
     private initializeControllers(controllers: Controller[]): void {

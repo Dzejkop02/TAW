@@ -22,14 +22,22 @@ export class SearchBarComponent implements OnInit {
     this.route.queryParams.subscribe(params => {
       this.filterText = params['name'];
       this.sendFilter(this.filterText);
+      // this.sendFilter();
     });
   }
 
 
+  // sendFilter($event: any): void {
+  //   this.name.emit($event);
+  //   this.router.navigate(['/'], {queryParams: {name:
+  //         $event?.toLowerCase()
+  //   }});
+  // }
+
   sendFilter($event: any): void {
-    this.name.emit($event);
-    this.router.navigate(['/'], {queryParams: {name:
-          $event?.toLowerCase()
-    }});
-  }
+    this.router.navigate(['/blog'], {queryParams: {name:
+        this.filterText?.toLowerCase()}});
+    this.name.emit(this.filterText);
+   }
+   
 }

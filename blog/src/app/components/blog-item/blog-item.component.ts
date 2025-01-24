@@ -15,5 +15,5 @@ export class BlogItemComponent {
   @Input() id?: number;
   @Input() image?: string;
   @Input() text?: string;
-
+  @Input() title?: string;
 }
