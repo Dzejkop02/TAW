@@ -26,22 +26,29 @@ class UserController implements Controller {
        this.router.post(`${this.path}/reset/:userId`, this.resetPassword);
    }
 
-   private authenticate = async (request: Request, response: Response, next: NextFunction) => {
-        const {login, password} = request.body;
+    private authenticate = async (request: Request, response: Response, next: NextFunction) => {
+        const { login, password } = request.body;
 
         try {
             const user = await this.userService.getByEmailOrName(login);
             if (!user) {
-                response.status(401).json({error: 'Unauthorized'});
+                return response.status(401).json({ error: 'Unauthorized' });
             }
-            await this.passwordService.authorize(user.id, await this.passwordService.hashPassword(password));
+
+            const authorized = await this.passwordService.authorize(user._id, password);
+            if (!authorized) {
+                return response.status(401).json({ error: 'Unauthorized' });
+            }
+
             const token = await this.tokenService.create(user);
-            response.status(200).json(this.tokenService.getToken(token));
+            return response.status(200).json(this.tokenService.getToken(token));
+
         } catch (error) {
             console.error(`Validation Error: ${error.message}`);
-            response.status(401).json({error: 'Unauthorized'});
+            return response.status(401).json({ error: 'Unauthorized' });
         }
     };
+
 
     private createNewOrUpdate = async (request: Request, response: Response, next: NextFunction) => {
         const userData = request.body;

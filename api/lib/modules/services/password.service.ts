@@ -1,4 +1,4 @@
-import PasswordModel  from '../schemas/password.schema';
+import PasswordModel from '../schemas/password.schema';
 import UserModel from '../schemas/user.schema';
 import bcrypt from 'bcrypt';
 
@@ -12,18 +12,19 @@ class PasswordService {
        return result;
    }
 
-   public async authorize(userId: string, password: string) {
-       try {
-           const result = await PasswordModel.findOne({ userId: userId, password: password });
-           if (result) {
-               return true;
-           }
-       } catch (error) {
-           console.error('Wystąpił błąd podczas tworzenia danych:', error);
-           throw new Error('Wystąpił błąd podczas tworzenia danych');
-       }
+    public async authorize(userId: string, candidatePassword: string): Promise<boolean> {
+        try {
+            const passwordRecord = await PasswordModel.findOne({ userId });
+            if (!passwordRecord) {
+                return false;
+            }
 
-   }
+            return await bcrypt.compare(candidatePassword, passwordRecord.password);
+        } catch (error) {
+            console.error('Błąd podczas autoryzacji:', error);
+            throw new Error('Autoryzacja nie powiodła się.');
+        }
+    }
 
     public async changePassword(userId: string, oldPassword: string, newPassword: string) {
         try {
