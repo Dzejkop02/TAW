@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9c048542-de11-4398-94d5-b7ad77110f57" name="Changes" comment="lab 11">
+    <list default="true" id="9c048542-de11-4398-94d5-b7ad77110f57" name="Changes" comment="password auth fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/lib/controllers/user.controller.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/lib/controllers/user.controller.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/api/lib/modules/services/password.service.ts" beforeDir="false" afterPath="$PROJECT_DIR$/api/lib/modules/services/password.service.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/blog/src/app/app.routes.ts" beforeDir="false" afterPath="$PROJECT_DIR$/blog/src/app/app.routes.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,7 +82,7 @@
       <workItem from="1733506991206" duration="2314000" />
       <workItem from="1736547347664" duration="85000" />
       <workItem from="1737284360955" duration="6000" />
-      <workItem from="1737745993038" duration="693000" />
+      <workItem from="1737745993038" duration="1310000" />
     </task>
     <task id="LOCAL-00001" summary="Lab 06">
       <created>1732290962546</created>
@@ -134,7 +133,14 @@
       <option name="project" value="LOCAL" />
       <updated>1737746083240</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="password auth fix">
+      <created>1737747314973</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1737747314973</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -159,6 +165,7 @@
     <MESSAGE value="Added delete password." />
     <MESSAGE value="lab 10" />
     <MESSAGE value="lab 11" />
-    <option name="LAST_COMMIT_MESSAGE" value="lab 11" />
+    <MESSAGE value="password auth fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="password auth fix" />
   </component>
 </project>
